@@ -1,0 +1,656 @@
+soul = {
+	category = personality
+
+	name = {
+		first_valid = {
+			triggered_desc = { trigger = { NOT = { exists = this } } desc = soul_dormant }
+			triggered_desc = { trigger = { NOT = { has_trait = soul } } desc = soul_dormant }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 10 } } desc = soul_dormant }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 20 } } desc = soul_flickering }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 30 } } desc = soul_awakened }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 40 } } desc = soul_arcane }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 50 } } desc = soul_kindled }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 60 } } desc = soul_radiant }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 70 } } desc = soul_mystic }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 80 } } desc = soul_transcendent }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 90 } } desc = soul_ethereal }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 99 } } desc = soul_ascendant }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value > 99 } } desc = soul_empyrean }
+			desc = soul_dormant
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = { trigger = { NOT = { exists = this } } desc = soul_dormant_desc }
+			triggered_desc = { trigger = { NOT = { has_trait = soul } } desc = soul_dormant_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 10 } } desc = soul_dormant_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 20 } } desc = soul_flickering_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 30 } } desc = soul_awakened_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 40 } } desc = soul_arcane_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 50 } } desc = soul_kindled_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 60 } } desc = soul_radiant_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 70 } } desc = soul_mystic_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 80 } } desc = soul_transcendent_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 90 } } desc = soul_ethereal_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 99 } } desc = soul_ascendant_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value > 99 } } desc = soul_empyrean_desc }
+			desc = soul_dormant_desc
+		}
+	}
+	icon = {
+		first_valid = {
+			triggered_desc = { trigger = { NOT = { exists = this } } desc = soul_dormant.dds }
+			triggered_desc = { trigger = { NOT = { has_trait = soul } } desc = soul_dormant.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 10 } } desc = soul_dormant.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 20 } } desc = soul_flickering.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 30 } } desc = soul_awakened.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 40 } } desc = soul_arcane.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 50 } } desc = soul_kindled.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 60 } } desc = soul_radiant.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 70 } } desc = soul_mystic.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 80 } } desc = soul_transcendent.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 90 } } desc = soul_ethereal.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value < 99 } } desc = soul_ascendant.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = soul track = soul_level value > 99 } } desc = soul_empyrean.dds }
+			desc = soul_dormant.dds
+		}
+	}
+
+	physical = yes
+	good = yes
+
+	birth = 1
+	random_creation = 1
+
+	tracks = {
+		soul_level = {
+			10 = {
+				life_expectancy = 1
+			}
+			20 = {
+				life_expectancy = 2
+			}
+			30 = {
+				life_expectancy = 4
+			}
+			40 = {
+				life_expectancy = 8
+			}
+			50 = {
+				life_expectancy = 16
+			}
+			60 = {
+				life_expectancy = 32
+			}
+			70 = {
+				life_expectancy = 64
+			}
+			80 = {
+				life_expectancy = 128
+			}
+			90 = {
+				life_expectancy = 256
+			}
+			100 = {
+				life_expectancy = 512
+			}
+		}
+	
+		soul_integrity = {
+			0 = {
+
+			}
+			25 = {
+
+			}
+			50 = {
+
+			}
+			75 = {
+
+			}
+			100 = {
+
+			}
+		}
+	}
+
+	opposites = {
+	}
+}
+
+elementalist = {
+	category = personality
+
+	name = {
+		first_valid = {
+			triggered_desc = { trigger = { NOT = { exists = this } } desc = elementalist_initiate }
+			triggered_desc = { trigger = { NOT = { has_trait_xp = { trait = elementalist track = fire value < 20 } has_trait_xp = { trait = elementalist track = water value < 20 } has_trait_xp = { trait = elementalist track = earth value < 20 } has_trait_xp = { trait = elementalist track = wind value < 20 } has_trait_xp = { trait = elementalist track = void value < 20 } } } desc = elementalist_initiate }
+			triggered_desc = { trigger = { calc_true_if = { amount = 5 has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = void value >= 80 } } } desc = elementalist_omnimental }
+			triggered_desc = { trigger = { calc_true_if = { amount = 4 has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = void value >= 80 } } } desc = elementalist_quadra_virtuoso }
+			triggered_desc = { trigger = { calc_true_if = { amount = 3 has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = void value >= 80 } } } desc = elementalist_triune_sorcerer }
+			triggered_desc = { trigger = { calc_true_if = { amount = 2 has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = void value >= 80 } } } desc = elementalist_dual_conflux }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = void value > 99 } } desc = elementalist_abyss_sovereign }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = wind value > 99 } } desc = elementalist_storm_sovereign }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = earth value > 99 } } desc = elementalist_mountain_sovereign }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = water value > 99 } } desc = elementalist_ocean_sovereign }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = fire value > 99 } } desc = elementalist_blaze_sovereign }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = void value >= 80 } has_trait_xp = { trait = elementalist track = void value < 99 } } } desc = elementalist_abyss_caller }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = wind value < 99 } } } desc = elementalist_storm_bringer }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = earth value < 99 } } } desc = elementalist_mountain_warden }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = water value < 99 } } } desc = elementalist_ocean_caller }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = fire value < 99 } } } desc = elementalist_inferno_caller }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = void value >= 60 } has_trait_xp = { trait = elementalist track = void value < 80 } } } desc = elementalist_void_shifter }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = wind value >= 60 } has_trait_xp = { trait = elementalist track = wind value < 80 } } } desc = elementalist_gale_summoner }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = earth value >= 60 } has_trait_xp = { trait = elementalist track = earth value < 80 } } } desc = elementalist_earth_sculptor }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = water value >= 60 } has_trait_xp = { trait = elementalist track = water value < 80 } } } desc = elementalist_tide_weaver }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = fire value >= 60 } has_trait_xp = { trait = elementalist track = fire value < 80 } } } desc = elementalist_flame_weaver }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = void value >= 40 } has_trait_xp = { trait = elementalist track = void value < 60 } } } desc = elementalist_umbral_adept }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = wind value >= 40 } has_trait_xp = { trait = elementalist track = wind value < 60 } } } desc = elementalist_wind_dancer }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = earth value >= 40 } has_trait_xp = { trait = elementalist track = earth value < 60 } } } desc = elementalist_stone_shaper }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = water value >= 40 } has_trait_xp = { trait = elementalist track = water value < 60 } } } desc = elementalist_wave_tamer }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = fire value >= 40 } has_trait_xp = { trait = elementalist track = fire value < 60 } } } desc = elementalist_ember_adept }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = void value >= 20 } has_trait_xp = { trait = elementalist track = void value < 40 } } } desc = elementalist_shadow_initiate }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = wind value >= 20 } has_trait_xp = { trait = elementalist track = wind value < 40 } } } desc = elementalist_breeze_whisperer }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = earth value >= 20 } has_trait_xp = { trait = elementalist track = earth value < 40 } } } desc = elementalist_pebble_novice }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = water value >= 20 } has_trait_xp = { trait = elementalist track = water value < 40 } } } desc = elementalist_droplet_beginner }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = fire value >= 20 } has_trait_xp = { trait = elementalist track = fire value < 40 } } } desc = elementalist_spark_initiate }
+
+			desc = elementalist_initiate
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = { trigger = { NOT = { exists = this } } desc = elementalist_initiate_desc }
+			triggered_desc = { trigger = { NOT = { has_trait_xp = { trait = elementalist track = fire value < 20 } has_trait_xp = { trait = elementalist track = water value < 20 } has_trait_xp = { trait = elementalist track = earth value < 20 } has_trait_xp = { trait = elementalist track = wind value < 20 } has_trait_xp = { trait = elementalist track = void value < 20 } } } desc = elementalist_initiate_desc }
+			triggered_desc = { trigger = { calc_true_if = { amount = 5 has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = void value >= 80 } } } desc = elementalist_omnimental_desc }
+			triggered_desc = { trigger = { calc_true_if = { amount = 4 has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = void value >= 80 } } } desc = elementalist_quadra_virtuoso_desc }
+			triggered_desc = { trigger = { calc_true_if = { amount = 3 has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = void value >= 80 } } } desc = elementalist_triune_sorcerer_desc }
+			triggered_desc = { trigger = { calc_true_if = { amount = 2 has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = void value >= 80 } } } desc = elementalist_dual_conflux_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = void value > 99 } } desc = elementalist_abyss_sovereign_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = wind value > 99 } } desc = elementalist_storm_sovereign_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = earth value > 99 } } desc = elementalist_mountain_sovereign_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = water value > 99 } } desc = elementalist_ocean_sovereign_desc }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = fire value > 99 } } desc = elementalist_blaze_sovereign_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = void value >= 80 } has_trait_xp = { trait = elementalist track = void value < 99 } } } desc = elementalist_abyss_caller_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = wind value < 99 } } } desc = elementalist_storm_bringer_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = earth value < 99 } } } desc = elementalist_mountain_warden_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = water value < 99 } } } desc = elementalist_ocean_caller_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = fire value < 99 } } } desc = elementalist_inferno_caller_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = void value >= 60 } has_trait_xp = { trait = elementalist track = void value < 80 } } } desc = elementalist_void_shifter_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = wind value >= 60 } has_trait_xp = { trait = elementalist track = wind value < 80 } } } desc = elementalist_gale_summoner_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = earth value >= 60 } has_trait_xp = { trait = elementalist track = earth value < 80 } } } desc = elementalist_earth_sculptor_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = water value >= 60 } has_trait_xp = { trait = elementalist track = water value < 80 } } } desc = elementalist_tide_weaver_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = fire value >= 60 } has_trait_xp = { trait = elementalist track = fire value < 80 } } } desc = elementalist_flame_weaver_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = void value >= 40 } has_trait_xp = { trait = elementalist track = void value < 60 } } } desc = elementalist_umbral_adept_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = wind value >= 40 } has_trait_xp = { trait = elementalist track = wind value < 60 } } } desc = elementalist_wind_dancer_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = earth value >= 40 } has_trait_xp = { trait = elementalist track = earth value < 60 } } } desc = elementalist_stone_shaper_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = water value >= 40 } has_trait_xp = { trait = elementalist track = water value < 60 } } } desc = elementalist_wave_tamer_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = fire value >= 40 } has_trait_xp = { trait = elementalist track = fire value < 60 } } } desc = elementalist_ember_adept_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = void value >= 20 } has_trait_xp = { trait = elementalist track = void value < 40 } } } desc = elementalist_shadow_initiate_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = wind value >= 20 } has_trait_xp = { trait = elementalist track = wind value < 40 } } } desc = elementalist_breeze_whisperer_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = earth value >= 20 } has_trait_xp = { trait = elementalist track = earth value < 40 } } } desc = elementalist_pebble_novice_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = water value >= 20 } has_trait_xp = { trait = elementalist track = water value < 40 } } } desc = elementalist_droplet_beginner_desc }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = fire value >= 20 } has_trait_xp = { trait = elementalist track = fire value < 40 } } } desc = elementalist_spark_initiate_desc }
+
+			desc = elementalist_initiate_desc
+		
+		}
+	}
+	icon = {
+		first_valid = {
+			triggered_desc = { trigger = { NOT = { exists = this } } desc = elementalist_initiate.dds }
+			triggered_desc = { trigger = { NOT = { has_trait_xp = { trait = elementalist track = fire value < 20 } has_trait_xp = { trait = elementalist track = water value < 20 } has_trait_xp = { trait = elementalist track = earth value < 20 } has_trait_xp = { trait = elementalist track = wind value < 20 } has_trait_xp = { trait = elementalist track = void value < 20 } } } desc = elementalist_initiate.dds }
+			triggered_desc = { trigger = { calc_true_if = { amount = 5 has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = void value >= 80 } } } desc = elementalist_omnimental.dds }
+			triggered_desc = { trigger = { calc_true_if = { amount = 4 has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = void value >= 80 } } } desc = elementalist_quadra_virtuoso.dds }
+			triggered_desc = { trigger = { calc_true_if = { amount = 3 has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = void value >= 80 } } } desc = elementalist_triune_sorcerer.dds }
+			triggered_desc = { trigger = { calc_true_if = { amount = 2 has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = void value >= 80 } } } desc = elementalist_dual_conflux.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = void value > 99 } } desc = elementalist_archmage.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = wind value > 99 } } desc = elementalist_archmage.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = earth value > 99 } } desc = elementalist_archmage.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = water value > 99 } } desc = elementalist_archmage.dds }
+			triggered_desc = { trigger = { has_trait_xp = { trait = elementalist track = fire value > 99 } } desc = elementalist_archmage.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = void value >= 80 } has_trait_xp = { trait = elementalist track = void value < 99 } } } desc = elementalist_magus.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = wind value >= 80 } has_trait_xp = { trait = elementalist track = wind value < 99 } } } desc = elementalist_magus.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = earth value >= 80 } has_trait_xp = { trait = elementalist track = earth value < 99 } } } desc = elementalist_magus.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = water value >= 80 } has_trait_xp = { trait = elementalist track = water value < 99 } } } desc = elementalist_magus.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = fire value >= 80 } has_trait_xp = { trait = elementalist track = fire value < 99 } } } desc = elementalist_magus.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = void value >= 60 } has_trait_xp = { trait = elementalist track = void value < 80 } } } desc = elementalist_expert.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = wind value >= 60 } has_trait_xp = { trait = elementalist track = wind value < 80 } } } desc = elementalist_expert.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = earth value >= 60 } has_trait_xp = { trait = elementalist track = earth value < 80 } } } desc = elementalist_expert.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = water value >= 60 } has_trait_xp = { trait = elementalist track = water value < 80 } } } desc = elementalist_expert.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = fire value >= 60 } has_trait_xp = { trait = elementalist track = fire value < 80 } } } desc = elementalist_expert.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = void value >= 40 } has_trait_xp = { trait = elementalist track = void value < 60 } } } desc = elementalist_mage.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = wind value >= 40 } has_trait_xp = { trait = elementalist track = wind value < 60 } } } desc = elementalist_mage.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = earth value >= 40 } has_trait_xp = { trait = elementalist track = earth value < 60 } } } desc = elementalist_mage.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = water value >= 40 } has_trait_xp = { trait = elementalist track = water value < 60 } } } desc = elementalist_mage.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = fire value >= 40 } has_trait_xp = { trait = elementalist track = fire value < 60 } } } desc = elementalist_mage.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = void value >= 20 } has_trait_xp = { trait = elementalist track = void value < 40 } } } desc = elementalist_apprentice.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = wind value >= 20 } has_trait_xp = { trait = elementalist track = wind value < 40 } } } desc = elementalist_apprentice.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = earth value >= 20 } has_trait_xp = { trait = elementalist track = earth value < 40 } } } desc = elementalist_apprentice.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = water value >= 20 } has_trait_xp = { trait = elementalist track = water value < 40 } } } desc = elementalist_apprentice.dds }
+			triggered_desc = { trigger = { AND = { has_trait_xp = { trait = elementalist track = fire value >= 20 } has_trait_xp = { trait = elementalist track = fire value < 40 } } } desc = elementalist_apprentice.dds }
+
+			desc = elementalist_initiate.dds
+		}
+	}
+
+
+	physical = yes
+	good = yes
+
+	tracks = {
+		fire = {
+			20 = {
+				prowess_no_portrait = 1
+				martial = 1
+			}
+			40 = {
+				prowess_no_portrait = 2
+				martial = 1
+
+				ai_boldness = 5
+			}
+			60 = {
+				prowess_no_portrait = 3
+				martial = 1
+				character_travel_safety = 5
+
+				ai_boldness = 10
+			}
+			80 = {
+				prowess_no_portrait = 4
+				martial = 2
+				dread_baseline_add = 5
+				siege_phase_time = -0.05
+				enemy_hard_casualty_modifier = 0.05
+				monthly_prestige_gain_mult = 0.1
+				character_travel_safety = 10
+
+				ai_boldness = 15
+			}
+			100 = {
+				prowess_no_portrait = 5
+				martial = 3
+				dread_baseline_add = 15
+				siege_phase_time = -0.1
+				enemy_hard_casualty_modifier = 0.15
+				owned_legend_spread_mult = 0.1
+				monthly_prestige_gain_mult = 0.2
+				character_travel_safety = 20
+
+				ai_boldness = 30
+			}
+		}
+
+		water = {
+			20 = {
+				prowess_no_portrait = 1
+				diplomacy = 1
+			}
+			40 = {
+				prowess_no_portrait = 2
+				diplomacy = 2
+
+				ai_sociability = 5
+			}
+			60 = {
+				prowess_no_portrait = 3
+				diplomacy = 3
+				character_travel_safety = 5
+
+				ai_sociability = 10
+			}
+			80 = {
+				prowess_no_portrait = 4
+				diplomacy = 4
+				monthly_prestige_gain_mult = 0.1
+				hard_casualty_modifier = -0.05
+				character_travel_safety = 10
+
+				ai_sociability = 15
+			}
+			100 = {
+				prowess_no_portrait = 5
+				diplomacy = 5
+				hard_casualty_modifier = -0.05
+				monthly_prestige_gain_mult = 0.2
+				owned_legend_spread_mult = 0.1
+				character_travel_safety = 20
+
+				ai_sociability = 30
+			}
+		}
+
+		earth = {
+			20 = {
+				prowess_no_portrait = 1
+				stewardship = 1
+			}
+			40 = {
+				prowess_no_portrait = 2
+				stewardship = 2
+
+				ai_greed = 5
+			}
+			60 = {
+				prowess_no_portrait = 3
+				stewardship = 3
+				character_travel_safety = 5
+
+				ai_greed = 10
+			}
+			80 = {
+				prowess_no_portrait = 4
+				stewardship = 4
+				monthly_prestige_gain_mult = 0.1
+				counter_efficiency = 0.05
+				siege_phase_time = -0.2
+				character_travel_safety = 10
+
+				ai_greed = 15
+			}
+			100 = {
+				prowess_no_portrait = 5
+				stewardship = 5
+				siege_phase_time = -0.30
+				counter_efficiency = 0.1
+				monthly_prestige_gain_mult = 0.2
+				owned_legend_spread_mult = 0.1
+				character_travel_safety = 20
+
+				ai_greed = 30
+			}
+		}
+
+		wind = {
+			20 = {
+				prowess_no_portrait = 1
+				learning = 1
+			}
+			40 = {
+				prowess_no_portrait = 2
+				learning = 2
+
+				ai_compassion = 5
+			}
+			60 = {
+				prowess_no_portrait = 3
+				learning = 3
+				character_travel_safety = 5
+
+				ai_compassion = 10
+			}
+			80 = {
+				prowess_no_portrait = 4
+				learning = 4
+				monthly_prestige_gain_mult = 0.1
+				movement_speed = 0.1
+				character_travel_speed = 5
+				character_travel_safety = 10
+
+				ai_compassion = 15
+			}
+			100 = {
+				prowess_no_portrait = 5
+				learning = 5
+				movement_speed = 0.2
+				monthly_prestige_gain_mult = 0.2
+				character_travel_speed = 10
+				character_travel_safety = 20
+				owned_legend_spread_mult = 0.1
+
+				ai_compassion = 30
+			}
+		}
+
+		void = {
+			20 = {
+				prowess_no_portrait = 1
+				intrigue = 1
+			}
+			40 = {
+				prowess_no_portrait = 2
+				intrigue = 2
+
+				ai_zeal = 5
+			}
+			60 = {
+				prowess_no_portrait = 3
+				intrigue = 3
+				character_travel_safety = 5
+				owned_hostile_scheme_success_chance_max_add = 5
+				enemy_hostile_scheme_success_chance_max_add = -5
+
+				ai_zeal = 10
+			}
+			80 = {
+				prowess_no_portrait = 4
+				intrigue = 4
+				monthly_prestige_gain_mult = 0.1
+				character_travel_safety = 10
+				owned_hostile_scheme_success_chance_max_add = 10
+				enemy_hostile_scheme_success_chance_max_add = -10
+
+				ai_zeal = 15
+			}
+			100 = {
+				prowess_no_portrait = 5
+				intrigue = 5
+				monthly_prestige_gain_mult = 0.2
+				owned_legend_spread_mult = 0.1
+				character_travel_safety = 20
+				owned_hostile_scheme_success_chance_max_add = 15
+				enemy_hostile_scheme_success_chance_max_add = -15
+
+				ai_zeal = 30
+			}
+		}
+	}
+
+	birth = 0
+	random_creation = 0
+	inherit_chance = 0
+}
+
+mage = {
+	category = personality
+
+	name = {
+		first_valid = {
+			triggered_desc = { trigger = { NOT = { exists = this } } desc = mage_humillimus_infans }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 25 } } desc = mage_aeternus_nobilis_praecantor }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 24 } } desc = mage_nobilis_praecantor }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 23 } } desc = mage_praecantor }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 22 } } desc = mage_arcaneus_nobilis_primus }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 21 } } desc = mage_arcaneus_primus }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 20 } } desc = mage_primus }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 19 } } desc = mage_nobilis_altissimus }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 18 } } desc = mage_altissimus }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 17 } } desc = mage_summus_archimagus }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 16 } } desc = mage_primoris_archimagus }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 15 } } desc = mage_summus_thaumaturga }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 14 } } desc = mage_medius_thaumaturga }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 13 } } desc = mage_primoris_thaumaturga }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 12 } } desc = mage_summus_magister }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 11 } } desc = mage_medius_magister }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 10 } } desc = mage_primoris_magister }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 9 } } desc = mage_summus_magus }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 8 } } desc = mage_praecelsus_magus }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 7 } } desc = mage_medius_magus }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 6 } } desc = mage_inferus_magus }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 5 } } desc = mage_primoris_magus }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 4 } } desc = mage_adept }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 3 } } desc = mage_novitiate }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 2 } } desc = mage_infans }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 1 } } desc = mage_humillimus_infans }
+
+			desc = mage_humillimus_infans
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = { trigger = { NOT = { exists = this } } desc = mage_humillimus_infans_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 25 } } desc = mage_aeternus_nobilis_praecantor_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 24 } } desc = mage_nobilis_praecantor_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 23 } } desc = mage_praecantor_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 22 } } desc = mage_arcaneus_nobilis_primus_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 21 } } desc = mage_arcaneus_primus_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 20 } } desc = mage_primus_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 19 } } desc = mage_nobilis_altissimus_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 18 } } desc = mage_altissimus_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 17 } } desc = mage_summus_archimagus_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 16 } } desc = mage_primoris_archimagus_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 15 } } desc = mage_summus_thaumaturga_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 14 } } desc = mage_medius_thaumaturga_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 13 } } desc = mage_primoris_thaumaturga_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 12 } } desc = mage_summus_magister_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 11 } } desc = mage_medius_magister_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 10 } } desc = mage_primoris_magister_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 9 } } desc = mage_summus_magus_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 8 } } desc = mage_praecelsus_magus_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 7 } } desc = mage_medius_magus_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 6 } } desc = mage_inferus_magus_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 5 } } desc = mage_primoris_magus_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 4 } } desc = mage_adept_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 3 } } desc = mage_novitiate_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 2 } } desc = mage_infans_desc }
+			triggered_desc = { trigger = { mage_level = { LEVEL = 1 } } desc = mage_humillimus_infans_desc }
+
+			desc = mage_humillimus_infans_desc
+		}
+	}
+	icon = mage.dds
+
+	physical = yes
+	good = yes
+
+	tracks = {
+		# Conjuration
+		evoctus = {
+			20 = {
+				prowess_no_portrait = 1
+				martial = 1
+			}
+			40 = {
+				prowess_no_portrait = 1
+				martial = 1
+			}
+			60 = {
+				prowess_no_portrait = 1
+				martial = 1
+			}
+			80 = {
+				prowess_no_portrait = 1
+				martial = 2
+			}
+			100 = {
+				prowess_no_portrait = 1
+				martial = 3
+				owned_legend_spread_mult = 0.1
+			}
+
+		}
+		# Rituals
+		ritualis ={
+			20 = {
+				prowess_no_portrait = 1
+				learning = 1
+			}
+			40 = {
+				prowess_no_portrait = 1
+				learning = 1
+			}
+			60 = {
+				prowess_no_portrait = 1
+				learning = 1
+			}
+			80 = {
+				prowess_no_portrait = 1
+				learning = 2
+			}
+			100 = {
+				prowess_no_portrait = 1
+				learning = 3
+				owned_legend_spread_mult = 0.1
+			}
+		}
+		# Enchantment
+		vinculum = {
+			20 = {
+				prowess_no_portrait = 1
+				diplomacy = 1
+			}
+			40 = {
+				prowess_no_portrait = 1
+				diplomacy = 1
+			}
+			60 = {
+				prowess_no_portrait = 1
+				diplomacy = 1
+			}
+			80 = {
+				prowess_no_portrait = 1
+				diplomacy = 2
+			}
+			100 = {
+				prowess_no_portrait = 1
+				diplomacy = 3
+				owned_legend_spread_mult = 0.1
+			}
+		}
+		# Illusions
+		illusoria = {
+			20 = {
+				prowess_no_portrait = 1
+				intrigue = 1
+			}
+			40 = {
+				prowess_no_portrait = 1
+				intrigue = 1
+			}
+			60 = {
+				prowess_no_portrait = 1
+				intrigue = 1
+			}
+			80 = {
+				prowess_no_portrait = 1
+				intrigue = 2
+			}
+			100 = {
+				prowess_no_portrait = 1
+				intrigue = 3
+				owned_legend_spread_mult = 0.1
+			}
+		}
+
+		# Transmutation
+		transmutatio = {
+			20 = {
+				prowess_no_portrait = 1
+				stewardship = 1
+			}
+			40 = {
+				prowess_no_portrait = 1
+				stewardship = 1
+			}
+			60 = {
+				prowess_no_portrait = 1
+				stewardship = 1
+			}
+			80 = {
+				prowess_no_portrait = 1
+				stewardship = 2
+			}
+			100 = {
+				prowess_no_portrait = 1
+				stewardship = 3
+				owned_legend_spread_mult = 0.1
+			}
+		}
+	}
+
+	birth = 0
+	random_creation = 0
+	inherit_chance = 0
+}

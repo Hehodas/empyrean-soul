@@ -1,0 +1,34 @@
+mage_level = {
+	custom_tooltip = {
+		text = mage_$LEVEL$_tooltip
+		calc_true_if = {
+			amount = $LEVEL$
+	
+			has_trait_xp = { trait = mage track = evoctus value = 20 }
+			has_trait_xp = { trait = mage track = evoctus value = 40 }
+			has_trait_xp = { trait = mage track = evoctus value = 60 }
+			has_trait_xp = { trait = mage track = evoctus value = 80 }
+			has_trait_xp = { trait = mage track = evoctus value = 100 }
+			has_trait_xp = { trait = mage track = ritualis value = 20 }
+			has_trait_xp = { trait = mage track = ritualis value = 40 }
+			has_trait_xp = { trait = mage track = ritualis value = 60 }
+			has_trait_xp = { trait = mage track = ritualis value = 80 }
+			has_trait_xp = { trait = mage track = ritualis value = 100 }
+			has_trait_xp = { trait = mage track = vinculum value = 20 }
+			has_trait_xp = { trait = mage track = vinculum value = 40 }
+			has_trait_xp = { trait = mage track = vinculum value = 60 }
+			has_trait_xp = { trait = mage track = vinculum value = 80 }
+			has_trait_xp = { trait = mage track = vinculum value = 100 }
+			has_trait_xp = { trait = mage track = illusoria value = 20 }
+			has_trait_xp = { trait = mage track = illusoria value = 40 }
+			has_trait_xp = { trait = mage track = illusoria value = 60 }
+			has_trait_xp = { trait = mage track = illusoria value = 80 }
+			has_trait_xp = { trait = mage track = illusoria value = 100 }
+			has_trait_xp = { trait = mage track = transmutatio value = 20 }
+			has_trait_xp = { trait = mage track = transmutatio value = 40 }
+			has_trait_xp = { trait = mage track = transmutatio value = 60 }
+			has_trait_xp = { trait = mage track = transmutatio value = 80 }
+			has_trait_xp = { trait = mage track = transmutatio value = 100 }
+		}
+	}
+}

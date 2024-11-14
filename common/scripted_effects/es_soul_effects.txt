@@ -1,0 +1,142 @@
+es_initialize_soul_game_start = {
+	add_trait = soul
+	add_trait = elementalist
+	add_trait = mage
+	random_list = {
+		50 = {
+			random_list = {
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 1 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 2 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 3 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 4 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 5 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 6 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 7 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 8 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 9 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 10 } }
+			}
+		}
+		40 = {
+			random_list = {
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 11 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 12 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 13 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 14 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 15 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 16 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 17 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 18 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 19 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 20 } }
+			}
+		}
+		10 = {
+			random_list = {
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 21 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 22 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 23 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 24 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 25 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 26 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 27 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 28 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 29 } }
+				1 = { add_trait_xp = { trait = soul track = soul_level value = 30 } }
+			}
+		}
+	}
+
+	random_list = {
+		1 = { add_trait_xp = { trait = soul track = soul_integrity value = 76 } }
+		1 = { add_trait_xp = { trait = soul track = soul_integrity value = 82 } }
+		1 = { add_trait_xp = { trait = soul track = soul_integrity value = 87 } }
+		1 = { add_trait_xp = { trait = soul track = soul_integrity value = 91 } }
+		1 = { add_trait_xp = { trait = soul track = soul_integrity value = 92 } }
+		1 = { add_trait_xp = { trait = soul track = soul_integrity value = 93 } }
+		1 = { add_trait_xp = { trait = soul track = soul_integrity value = 94 } }
+		1 = { add_trait_xp = { trait = soul track = soul_integrity value = 95 } }
+		1 = { add_trait_xp = { trait = soul track = soul_integrity value = 96 } }
+		1 = { add_trait_xp = { trait = soul track = soul_integrity value = 100 } }
+	}
+
+	random_list = {
+		1 = {
+			random_list = {
+				1 = { add_trait_xp = { trait = elementalist track = fire value = 1 } }
+				1 = { add_trait_xp = { trait = elementalist track = fire value = 20 } }
+				1 = { add_trait_xp = { trait = elementalist track = fire value = 40 } }
+				1 = { add_trait_xp = { trait = elementalist track = fire value = 60 } }
+				1 = { add_trait_xp = { trait = elementalist track = fire value = 100 } }
+			}
+		}
+		1 = {
+			random_list = {
+				1 = { add_trait_xp = { trait = elementalist track = water value = 1 } }
+				1 = { add_trait_xp = { trait = elementalist track = water value = 20 } }
+				1 = { add_trait_xp = { trait = elementalist track = water value = 40 } }
+				1 = { add_trait_xp = { trait = elementalist track = water value = 60 } }
+				1 = { add_trait_xp = { trait = elementalist track = water value = 100 } }
+			}
+		}
+		1 = {
+			random_list = {
+				1 = { add_trait_xp = { trait = elementalist track = earth value = 1 } }
+				1 = { add_trait_xp = { trait = elementalist track = earth value = 20 } }
+				1 = { add_trait_xp = { trait = elementalist track = earth value = 40 } }
+				1 = { add_trait_xp = { trait = elementalist track = earth value = 60 } }
+				1 = { add_trait_xp = { trait = elementalist track = earth value = 100 } }
+			}
+		}
+		1 = {
+			random_list = {
+				1 = { add_trait_xp = { trait = elementalist track = air value = 1 } }
+				1 = { add_trait_xp = { trait = elementalist track = air value = 20 } }
+				1 = { add_trait_xp = { trait = elementalist track = air value = 40 } }
+				1 = { add_trait_xp = { trait = elementalist track = air value = 60 } }
+				1 = { add_trait_xp = { trait = elementalist track = air value = 100 } }
+			}
+		}
+		1 = {
+			random_list = {
+				1 = { add_trait_xp = { trait = elementalist track = void value = 1 } }
+				1 = { add_trait_xp = { trait = elementalist track = void value = 20 } }
+				1 = { add_trait_xp = { trait = elementalist track = void value = 40 } }
+				1 = { add_trait_xp = { trait = elementalist track = void value = 60 } }
+				1 = { add_trait_xp = { trait = elementalist track = void value = 100 } }
+			}
+		}
+
+	}
+
+	random_list = {
+		1 = {
+			1 = { add_trait_xp = { trait = mage track = evoctus value = 20 } }
+			1 = { add_trait_xp = { trait = mage track = evoctus value = 40 } }
+			1 = { add_trait_xp = { trait = mage track = evoctus value = 60 } }
+			1 = { add_trait_xp = { trait = mage track = evoctus value = 80 } }
+			1 = { add_trait_xp = { trait = mage track = evoctus value = 100 } }
+		}
+		1 = {
+			1 = { add_trait_xp = { trait = mage track = ritualis value = 20 } }
+			1 = { add_trait_xp = { trait = mage track = ritualis value = 40 } }
+			1 = { add_trait_xp = { trait = mage track = ritualis value = 60 } }
+			1 = { add_trait_xp = { trait = mage track = ritualis value = 80 } }
+			1 = { add_trait_xp = { trait = mage track = ritualis value = 100 } }
+		}
+		1 = {
+			1 = { add_trait_xp = { trait = mage track = vinculum value = 20 } }
+			1 = { add_trait_xp = { trait = mage track = vinculum value = 40 } }
+			1 = { add_trait_xp = { trait = mage track = vinculum value = 60 } }
+			1 = { add_trait_xp = { trait = mage track = vinculum value = 80 } }
+			1 = { add_trait_xp = { trait = mage track = vinculum value = 100 } }
+		}
+		1 = {
+			1 = { add_trait_xp = { trait = mage track = illusoria value = 20 } }
+			1 = { add_trait_xp = { trait = mage track = illusoria value = 40 } }
+			1 = { add_trait_xp = { trait = mage track = illusoria value = 60 } }
+			1 = { add_trait_xp = { trait = mage track = illusoria value = 80 } }
+			1 = { add_trait_xp = { trait = mage track = illusoria value = 100 } }
+		}
+	}
+}
